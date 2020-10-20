@@ -4,17 +4,20 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pytest = "*"
+coverage = "*"
+black = "*"
+pylint = "*"
 
 [packages]
 flask = "*"
 flask-restx = "*"
 flask-sqlalchemy = "*"
 flask-migrate = "*"
-pytest = "*"
-coverage = "*"
-black = "*"
-pylint = "*"
+flask-script = "*"
 gunicorn = "*"
+pyyaml = "*"
+mysql-connector-python = "*"
 
 [requires]
 python_version = "3.7"

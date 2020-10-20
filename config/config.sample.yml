@@ -1,0 +1,17 @@
+# startwith "default_" will be deleted. when build config
+default_app_config: &app_config
+  host: 0.0.0.0
+  port: 8080
+
+local:
+  app:
+    <<: *app_config
+
+dev:
+  app:
+    <<: *app_config
+
+prod:
+  app:
+    <<: *app_config
+    port: 80
